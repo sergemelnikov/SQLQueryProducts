@@ -8,5 +8,5 @@ and not exists
 select * from new_schema.purchaises as p1
 where c.customerid = p1.customerid
 and
-p1.productname = "сметана"  and TIMESTAMPDIFF(month,purchaisedatetime,now())<=1
+p1.productname = "сметана"  and TIMESTAMPDIFF(month, p1.purchaisedatetime, now()) <= 1
 );
